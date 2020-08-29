@@ -6,7 +6,7 @@
 	height: 40px;
 	justify-content: space-between;
 	left: 50%;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	transform: translateX(-50%);
 	width: 800px;
