@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Generate TASK</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="nav">
+			<ul>
+				<li id="home-click" class="actual">Home</li>
+				<li id="new-click">New</li>
+				<li id="tasks-click">Tasks</li>
+			</ul>
+		</nav>
+		<div class="logo">
+			Generate <span class="logo-task">TASK</span>
+		</div>
+	</header>
+
+	<section class="homeBx actualBx">
+		<div class="logo">
+			Generate <span class="logo-task">TASK</span>
+		</div>
+
+		<footer class="footer">Generate TASK 2020 | &copy; All rights reserved<br>Developed by Albert Diaz</footer>
+	</section>
+
+	<section class="newBx">
+		<form id="form-task">
+			<input class="title" type="text" name="title" placeholder="Title TASK">
+			<textarea class="description" name="task" placeholder="Description TASK"></textarea>
+			<label for="file" class="label-file">File.txt</label>
+			<input type="file" name="file" id="file" accept=".txt">
+			<button class="save" type="submit">Save</button>
+		</form>
+		<span class="error">No field should be empty</span>
+		<span class="success">Task Saved Successfully</span>
+	</section>
+
+	<section class="tasksBx">
+		<div class="content-tasks">
+			<section class="list-tasks">
+				<ul id="list"></ul>
+			</section>
+			<section class="description-task"></section>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="db/task.js"></script>
+	<script type="text/javascript" src="js/addTask.js"></script>
+	<script type="text/javascript" src="js/getTasks.js"></script>
+	<script type="text/javascript" src="js/editTask.js"></script>
+	<script type="text/javascript" src="js/deleteTask.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

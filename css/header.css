@@ -1,0 +1,47 @@
+.header {
+	align-items: center;
+	background-color: var(--color-primary-4);
+	color: #fff;
+	display: flex;
+	height: 40px;
+	justify-content: space-between;
+	left: 50%;
+	position: fixed;
+	top: 0;
+	transform: translateX(-50%);
+	width: 800px;
+	z-index: 1000;
+}
+
+.header .logo {
+	padding: 0 20px;
+}
+
+.header .logo .logo-task {
+	font-weight: 600;
+}
+
+.header .nav {
+	height: 100%;
+}
+
+.header .nav ul {
+	display: flex;
+	height: 100%;
+	list-style: none;
+}
+
+.header .nav ul li {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	font-size: 12px;
+	height: 100%;
+	padding: 0 20px;
+	text-transform: uppercase;
+	transition: .3s all ease;
+}
+
+.header .nav ul li:hover {
+	background-color: var(--color-primary-2);
+}

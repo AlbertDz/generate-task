@@ -1,0 +1,26 @@
+.homeBx {
+	background-color: #f1f1f1;
+	display: none;
+	height: 100%;
+	padding: 10px;
+	padding-top: 50px;
+	width: 100%;
+}
+
+.homeBx .footer {
+	font-size: 12px;
+	text-align: center;
+}
+
+.homeBx .logo {
+	background-color: var(--color-secondary-2-2);
+	border-radius: 100% 0 100% 0;
+	font-size: 40px;
+	margin: 80px 150px;
+	padding: 30px;
+	text-align: center;
+}
+
+.homeBx .logo .logo-task {
+	font-weight: 600;
+}

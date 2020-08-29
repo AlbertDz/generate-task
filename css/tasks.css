@@ -1,0 +1,112 @@
+.tasksBx {
+	background-color: #f1f1f1;
+	display: none;
+	height: 100%;
+	padding: 10px;
+	padding-top: 50px;
+	width: 100%;
+}
+
+.tasksBx .content-tasks {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 3fr;
+	height: 100%;
+}
+
+.tasksBx .content-tasks .description-task {
+	display: grid;
+	background-color: #fff;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr;
+}
+
+.tasksBx .content-tasks .description-task .description {
+	background-color: #fff;
+	font-size: 16px;
+	outline: none;
+	padding: 10px 20px;
+	resize: none;
+	width: 100%;
+}
+
+.tasksBx .content-tasks .description-task .header-task {
+	align-items: center;
+	background-color: var(--color-secondary-2-1);
+	display: flex;
+	justify-content: space-between;
+	min-height: 40px;
+	padding: 5px 10px;
+}
+
+.tasksBx .content-tasks .description-task .header-task .options-task {
+	display: flex;
+}
+
+.tasksBx .content-tasks .description-task .header-task .options-task .circle {
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	font-size: 10px;
+	font-weight: 600;
+	justify-content: center;
+	height: 25px;
+	text-transform: uppercase;
+	transition: .1s all ease;
+	width: 25px;
+}
+
+.tasksBx .content-tasks .description-task .header-task .options-task .circle img {
+	height: 20px;
+	width: 20px;
+}
+
+.tasksBx .content-tasks .description-task .header-task .options-task .circle:last-child img {
+	padding: 2px;
+}
+
+.tasksBx .content-tasks .description-task .header-task .options-task .circle.delete,
+.tasksBx .content-tasks .description-task .header-task .options-task .circle.edit {
+	margin-right: 5px;
+}
+
+.tasksBx .content-tasks .list-tasks {
+	background-color: #fff;
+	overflow-y: auto;
+}
+
+.tasksBx .content-tasks .list-tasks ul {
+	list-style: none;
+}
+
+.tasksBx .content-tasks .list-tasks ul li {
+	align-items: center;
+	border-bottom: thin solid #f1f1f1;
+	display: flex;
+	cursor: pointer;
+	min-height: 40px;
+	padding: 10px;
+	position: relative;
+	transition: .1s all ease;
+	width: 100%;
+}
+
+.tasksBx .content-tasks .list-tasks ul li::after {
+	background-color: var(--color-primary-4);
+	bottom: 0;
+	clip-path: polygon(0 0, 100% 100%, 0 100%);
+	content: "";
+	height: 10px;
+	left: 0;
+	position: absolute;
+	width: 20px;
+}
+
+.tasksBx .content-tasks .list-tasks ul li:last-child {
+	border: none;
+}
+
+.tasksBx .content-tasks .list-tasks ul li:hover {
+	background-color: var(--color-secondary-2-1);
+}

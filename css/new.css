@@ -1,0 +1,103 @@
+.newBx {
+	background-color: #f1f1f1;
+	display: none;
+	height: 100%;
+	padding: 10px;
+	padding-top: 50px;
+	position: relative;
+	width: 100%;
+}
+
+.newBx .description {
+	border-radius: 5px;
+	font-size: 16px;
+	height: 290px;
+	outline-color: var(--color-secondary-2-2);
+	padding: 10px 20px;
+	padding-bottom: 60px;
+	resize: none;
+	width: 100%;
+}
+
+.newBx .error {
+	background-color: rgba(0,0,0,.5);
+	border-radius: 5px;
+	bottom: 27px;
+	color: #fff;
+	display: none;
+	font-size: 12px;
+	padding: 5px 10px;
+	position: absolute;
+	right: 110px;
+	z-index: 100;
+}
+
+.newBx #file {
+	display: none;
+}
+
+.newBx .label-file {
+	background-color: var(--color-secondary-2-1);
+	border-radius: 5px;
+	bottom: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	outline: none;
+	padding: 10px 20px;
+	position: absolute;
+	left: 20px;
+	text-transform: uppercase;
+	transition: .3s all ease;
+}
+
+.newBx .save {
+	background-color: var(--color-secondary-2-1);
+	border-radius: 5px;
+	bottom: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	outline: none;
+	padding: 10px 20px;
+	position: absolute;
+	right: 20px;
+	text-transform: uppercase;
+	transition: .3s all ease;
+}
+
+.newBx .save:hover,
+.newBx .label-file:hover {
+	background-color: var(--color-secondary-2-2);
+}
+
+.newBx .success {
+	background-color: rgba(0,255,0,.2);
+	border-radius: 5px;
+	top: 50%;
+	color: #000;
+	display: none;
+	font-size: 12px;
+	padding: 5px 10px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+
+.newBx .title {
+	border-radius: 5px;
+	font-size: 16px;
+	height: 40px;
+	margin: 0 0 10px 0;
+	outline-color: var(--color-secondary-2-2);
+	padding: 5px 20px;
+	width: 100%;
+}
+
+.newBx .title::placeholder,
+.newBx .description::placeholder {
+	color: var(--color-secondary-2-1);
+}
