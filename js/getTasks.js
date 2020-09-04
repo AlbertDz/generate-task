@@ -53,6 +53,9 @@ const getTasks = {
 					<div class="header-task">
 						<p class="title-task">${result.title}</p>
 						<div class="options-task">
+							<span title="Export" class="circle export">
+								<img src="img/icon-export.png" id="${result.id}">
+							</span>
 							<span title="Delete" class="circle delete">
 								<img src="img/icon-delete.png" id="${result.id}">
 							</span>
@@ -71,8 +74,13 @@ const getTasks = {
 			const edit = document.querySelector('.edit');
 			const save = document.querySelector('.save-task');
 			const del = document.querySelector('.delete');
+			const exp = document.querySelector('.export');
 
 			const taskContent = document.getElementById('task');
+
+			exp.addEventListener('click', function(e) {
+				exportTask.taskExport(result.title, result.description);
+			});
 
 			del.addEventListener('click', function(e) {
 				deleteTask.delete(e.target.id);

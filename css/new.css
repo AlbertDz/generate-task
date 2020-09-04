@@ -5,13 +5,13 @@
 	padding: 10px;
 	padding-top: 50px;
 	position: relative;
-	width: 800px;
+	width: 900px;
 }
 
 .newBx .description {
 	border-radius: 5px;
 	font-size: 16px;
-	height: 290px;
+	height: 340px;
 	outline-color: var(--color-secondary-2-2);
 	padding: 10px 20px;
 	padding-bottom: 60px;

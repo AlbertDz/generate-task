@@ -34,7 +34,7 @@
 /**::-webkit-scrollbar-track { background: var(--color-primary-2); }*/
 
 body {
-	height: 400px;
+	height: 450px;
 	left: 50%;
 	position: absolute;
 	top: 50%;

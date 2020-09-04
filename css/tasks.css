@@ -4,7 +4,7 @@
 	height: 100%;
 	padding: 10px;
 	padding-top: 50px;
-	width: 800px;
+	width: 900px;
 }
 
 .tasksBx .content-tasks {
@@ -69,6 +69,12 @@
 .tasksBx .content-tasks .description-task .header-task .options-task .circle.delete,
 .tasksBx .content-tasks .description-task .header-task .options-task .circle.edit {
 	margin-right: 5px;
+}
+
+.tasksBx .content-tasks .description-task .header-task .options-task .circle.export {
+	border-right: thin solid #000;
+	margin-right: 5px;
+	padding-right: 5px;
 }
 
 .tasksBx .content-tasks .list-tasks {
