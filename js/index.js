@@ -22,11 +22,11 @@ window.addEventListener('load', function(e) {
 	};
 
 	task.dataBase.onsuccess = function(e) {
-		alert('Base de datos cargada exitosamente');
+		console.log('Base de datos cargada exitosamente');
 	};
 
 	task.dataBase.onerror = function(e) {
-		alert('Error cargando la base de datos');
+		console.log('Error cargando la base de datos');
 	};
 
 	form.addEventListener('submit', function(e) {
